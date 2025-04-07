@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="home.css" />
+    <title>Cover Genie</title>
+  </head>
+  <body>
+    <div class="header">
+      <h2 id="greeting"></h2>
+      <img
+        id="home"
+        src="assets/house-solid.svg"
+        alt=""
+      />
+    </div>
+    <h2 id="companyName"></h1>
+    <h2 id="jobTitle"></h2>
+    <div class="text-ctn">
+    <div class="btn-ctn">
+    <button id="generateCoverLetter">Generate Cover Letter</button>
+    <button id="generateDm">Generate Linkedn Dm</button>
+    </div>
+    <textarea
+      id="coverLetter"
+      rows="10"
+      cols="50"
+      placeholder="Your cover letter will appear here..."
+    ></textarea>
+  </div>
+    <img
+      id="copy"
+      src="assets/clipboard-solid.svg"
+      alt=""
+    />
+    <img
+      id="download"
+      src="assets/file-arrow-down-solid.svg"
+      alt=""
+    />
+    <script src="./libs/jspdf/jspdf.umd.min.js"></script>
+    <script src="./libs/jspdf/jspdf.plugin.autotable.js"></script>
+    <script type="module" src="home.js"></script>
+  </body>
+</html>
