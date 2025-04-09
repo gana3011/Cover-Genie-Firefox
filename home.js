@@ -40,7 +40,9 @@ browser.tabs.query({ active: true, currentWindow: true }, (tabs) => {
         return;
     }
 
+
     browser.tabs.sendMessage(tabs[0].id, { action: "extractJobDetails" }, async (response) => {
+        // browser.tabs.reload(tabs[0].id);
         if (browser.runtime.lastError) {
             console.error("Error:", browser.runtime.lastError.message);
             alert("Could not extract job details.");

@@ -144,8 +144,11 @@ form{
     transform: scale(0.95);
 }
 
-
 #fileName {
     font-family: 'Poppins', sans-serif;
     color: #6F6C63;
+}
+
+.status{
+    text-align: center;
 }
