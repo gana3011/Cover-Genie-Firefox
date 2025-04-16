@@ -12,6 +12,7 @@ body{
     padding:10px;
     min-width: 350px;
     min-height: 370px;
+    max-width: 400px;
 }
 
 .header{
@@ -30,6 +31,10 @@ body{
 .btn-ctn{
     display: flex;
     gap:10px;
+}
+
+#companyName,#jobTitle{
+    font-size: 18px;
 }
 
 button{
